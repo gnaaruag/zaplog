@@ -29,6 +29,22 @@ export default function SharePage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, loading]);
 
+  const handleDownloadImage = async () => {
+    const card = document.getElementById("share-card");
+    if (!card) return;
+
+    try {
+      const dataUrl = await htmlToImage.toPng(card);
+      const link = document.createElement("a");
+      link.download = `zaplog-${new Date().toISOString().split("T")[0]}.png`;
+      link.href = dataUrl;
+      link.click();
+    } catch (err) {
+      console.error("Download failed", err);
+      alert("Failed to generate image.");
+    }
+  };
+
   const fetchTodayData = async () => {
     const today = new Date().toISOString().split("T")[0];
 
@@ -89,7 +105,7 @@ export default function SharePage() {
 
     try {
       const blob = await htmlToImage.toBlob(card, {
-        pixelRatio: 3, 
+        pixelRatio: 3,
       });
       if (!blob) throw new Error("Failed to generate image");
 
@@ -162,7 +178,14 @@ export default function SharePage() {
         onClick={handleCopyCard}
         className="mt-6 w-full bg-[#AF3E3E] text-white py-2 rounded shadow"
       >
-        📋 Copy to Clipboard
+        📋 Copy Image to Clipboard
+      </button>
+
+      <button
+        onClick={handleDownloadImage}
+        className="mt-6 w-full bg-[#AF3E3E] text-white py-2 rounded shadow"
+      >
+        📥 Download Image
       </button>
     </main>
   );
