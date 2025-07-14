@@ -1,0 +1,21 @@
+{
+  "name": "Zaplog",
+  "short_name": "Zaplog",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EAEBD0",
+  "theme_color": "#AF3E3E",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

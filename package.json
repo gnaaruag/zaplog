@@ -1,0 +1,39 @@
+{
+  "name": "zaplog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.5",
+    "canvas-confetti": "^1.9.3",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "framer-motion": "^12.23.3",
+    "html-to-image": "^1.11.13",
+    "lucide-react": "^0.525.0",
+    "next": "15.3.5",
+    "next-pwa": "^5.6.0",
+    "react": "^19.0.0",
+    "react-confetti": "^6.4.0",
+    "react-dom": "^19.0.0",
+    "supabase": "^2.30.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/minimatch": "^6.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
