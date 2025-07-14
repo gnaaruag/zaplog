@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Zaplog — Habit & Daily Tracker (PWA)
 
-## Getting Started
+**Zaplog** is a minimalist, privacy-focused Progressive Web App (PWA) that helps you build habits, track your progress, and stay accountable — all without distractions.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ps this is my [buymeacoffee](https://buymeacoffee.com/gnaaruag) link. ;)
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-  **Daily Habit Logging**  
+  Mark habits as completed, skipped (rest day), or left incomplete each day.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-  **Per-Habit Calendar View**  
+  Visualize your consistency over time with habit-specific calendars.
 
-## Learn More
+-  **Accountability Notes**  
+  Write small reflections each day about what you did. Browse past entries too.
 
-To learn more about Next.js, take a look at the following resources:
+-  **Shareable Tracker Summary**  
+  Generate an image of your day’s progress (completion %, habit status) — perfect for social sharing or keeping yourself in check.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-  **Confetti Reward**  
+  Hit over 80% completion in a day? You’re rewarded with confetti!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-  **PWA (Progressive Web App)**  
+  Install Zaplog directly to your home screen. No App Store needed. Works offline after install.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##  Installation Guide (PWA)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+###  Android (Chrome)
+
+1. Open the Zaplog URL in **Google Chrome**.
+2. Tap the **three-dot menu** in the top-right corner.
+3. Tap **“Add to Home screen”**.
+4. Confirm by tapping **“Install”** or **“Add”**.
+
+You’ll now have a Zaplog icon on your home screen, just like a native app.
+
+---
+
+###  iOS (Safari)
+
+1. Open the Zaplog URL in **Safari**.
+2. Tap the **Share** button at the bottom (square with arrow).
+3. Scroll down and tap **“Add to Home Screen”**.
+4. Tap **“Add”** in the top-right corner.
+
+Zaplog will now appear as a standalone app on your iPhone home screen.
+
+⚠️ **Note:** Due to iOS limitations, some features like "Copy to Clipboard" for images may not work. Use the **Download Image** option instead and long-press to save.
+
+---
+
+## Tech Stack
+
+- [Next.js 15 (App Router)]
+- Supabase (Auth + Database)
+- TailwindCSS
+- TypeScript
+- html-to-image + Clipboard API
+- canvas-confetti
+
+---
+
+Made because i hate habit trackers.
